@@ -1,0 +1,44 @@
+GET
+http://localhost:8080/currency/byDb
+
+GET
+http://localhost:8080/currency/byApi
+
+GET
+http://localhost:8080/currency/syncApi
+
+GET
+http://localhost:8080/currency/byDb
+
+POST
+http://localhost:8080/currency
+{
+  "code": "JPY",
+  "symbol": "G",
+  "rate": "57,756.298",
+  "description": "United States Dollar",
+  "rate_float": 57756.2984
+}
+
+GET
+http://localhost:8080/currency/byDb
+
+PUT
+http://localhost:8080/currency
+{
+  "id": 4,
+  "code": "JPY",
+  "symbol": "J",
+  "rate": "57,756.298",
+  "description": "United States Dollar",
+  "rate_float": 57756.2984
+}
+
+GET
+http://localhost:8080/currency/byDb
+
+DELETE
+http://localhost:8080/currency?id=4
+
+GET
+http://localhost:8080/currency/byDb
